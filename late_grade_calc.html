@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Professor Slack's Late Grade Calculator</title>
+
+    <script>
+        function calculate_late_grade(days_late)
+        {
+            late_penalty = 0.0003*Math.pow(days_late,3) - 0.0421*Math.pow(days_late,2) + 1.9866*days_late - 1.9447;
+            late_penalty = Math.floor(late_penalty);
+            return late_penalty;
+        }
+        
+        alert(calculate_late_grade(7));
+    </script>
+</head>
+<body>
+    <h2>Professor Slack's Late Grade Calculator</h2>
+    <p></p>
+</body>
+</html>
